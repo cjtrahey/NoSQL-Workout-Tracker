@@ -24,9 +24,9 @@ app.use(express.static("public"));
 app.use(logger("dev"));
 
 
-// connoecting with MongoDB via mongoose at our myapp database running locally on default port 27017
+// connecting with MongoDB via mongoose at our myapp database running locally on default port 27017
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/dbExample", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
 
 require("./routes/html-routes.js")(app);
