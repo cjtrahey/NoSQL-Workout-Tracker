@@ -16,12 +16,12 @@ const PORT = process.env.PORT || 3000 ;
 
 const app = express();
 
+app.use(logger("dev"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-
-app.use(logger("dev"));
 
 
 // connecting with MongoDB via mongoose at our myapp database running locally on default port 27017
@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { use
 
 
 require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
 
 app.listen(PORT, () => {
