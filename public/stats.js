@@ -44,7 +44,7 @@ function populateChart(data) {
   let pie = document.querySelector("#canvas3").getContext("2d");
   let pie2 = document.querySelector("#canvas4").getContext("2d");
 
-  function setLabels(data) {
+  function labelForDayOfTheWeek(data) {
     
     const days = [
       "Sunday",
@@ -59,10 +59,10 @@ function populateChart(data) {
     const labels = [];
 
     for (let i = 0; i < data.length; i++) {
-      const dayNum = new Date(data[i].day).getDay();
+      const dayOfTheWeek = new Date(data[i].day).getDay();
       const month = new Date(data[i].day).getMonth() + 1;
       const date = new Date(data[i].day).getDate();
-      labels.push(`${days[dayNum]} ${[month]}/${[date]}`);
+      labels.push(`${days[dayOfTheWeek]} ${[month]}/${[date]}`);
 
     }
 
@@ -70,7 +70,7 @@ function populateChart(data) {
 
   }
 
-  let dayLabels = setLabels(data);
+  let dayLabels = labelForDayOfTheWeek(data);
 
   lineChart = new Chart(line, {
     type: "line",
@@ -124,7 +124,7 @@ function populateChart(data) {
 
       datasets: [
         {
-          label: "Pounds",
+          label: "Weight In Pounds",
           data: pounds,
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
@@ -170,7 +170,7 @@ function populateChart(data) {
       labels: workouts,
       datasets: [
         {
-          label: "Total Active Minutes Per Cardio Exercise",
+          label: "Total Active Minutes Per Exercise Performed",
           backgroundColor: colors,
           data: durations
         }
@@ -179,7 +179,7 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Total Active Minutes Per Cardio Exercise"
+        text: "Total Active Minutes Per Exercise Performed"
       }
     }
   });
