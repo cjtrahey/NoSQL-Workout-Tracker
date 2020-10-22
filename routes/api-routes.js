@@ -60,8 +60,7 @@ module.exports = (app) => {
     app.get("/api/workouts/range", (req, res) => {
 
 
-        db.Workout.find({}).then(data => 
-            res.json(data))
+        db.Workout.find({}).limit(7).then(data => res.json(data))
 
 
         .catch(err => {
@@ -91,6 +90,12 @@ module.exports = (app) => {
             res.json(err);
 
           });
+
+    });
+
+    app.get("*", (req, res) => {
+
+        res.redirect("/");
 
     });
 

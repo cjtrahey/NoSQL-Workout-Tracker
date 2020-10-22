@@ -10,7 +10,6 @@ const WorkoutSchema = new Schema({
 
         type: Date,
         default: Date.now,
-        unique: true
 
     },
 
@@ -29,7 +28,8 @@ const WorkoutSchema = new Schema({
             },
 
             duration: {
-                type: Number
+                type: Number,
+                required: true
             },
 
             distance: {
@@ -51,7 +51,20 @@ const WorkoutSchema = new Schema({
         },
     ]
 
-});
+// virtuals for adding total duration of workout
+// reduce method flattens the durations into one single value
+
+},{ toJSON: { virtuals: true }} );
+
+WorkoutSchema.virtual("totalDuration").get(function() {
+    return this.exercises.reduce((total, exercise)=>{
+        return total + exercise.duration
+    },0);
+})
+
+// source:
+// https://mongoosejs.com/docs/tutorials/virtuals.html#virtuals-in-json
+
 
 
 const Workout = mongoose.model("Workout", WorkoutSchema);

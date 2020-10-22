@@ -35,6 +35,6 @@ require("./routes/api-routes.js")(app);
 
 app.listen(PORT, () => {
 
-    console.log(`Application is running on http://localhost:${PORT}!`);
+    console.log(`Application is running on http://localhost:${PORT}`);
 
 });
