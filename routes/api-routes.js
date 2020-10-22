@@ -1,11 +1,7 @@
 
-// post   /api/workouts
-// put /api/workouts/:id 
-// get /api/workouts/range
-
 const db = require("../models");
 
-const mongoose = require("mongoose");
+require("mongoose");
 
 
 
@@ -92,6 +88,10 @@ module.exports = (app) => {
           });
 
     });
+
+
+    
+    // catch-all on the "/"
 
     app.get("*", (req, res) => {
 
