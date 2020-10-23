@@ -115,7 +115,7 @@ function populateChart(data) {
     }
   });
 
-  barChart = new Chart(bar, {
+ let barChart = new Chart(bar, {
 
     type: "bar",
     data: {
@@ -163,7 +163,7 @@ function populateChart(data) {
     }
   });
 
-  pieChart = new Chart(pie, {
+  let pieChart = new Chart(pie, {
 
     type: "pie",
     data: {
@@ -184,7 +184,7 @@ function populateChart(data) {
     }
   });
 
-  donutChart = new Chart(pie2, {
+  let donutChart = new Chart(pie2, {
 
     type: "doughnut",
     data: {

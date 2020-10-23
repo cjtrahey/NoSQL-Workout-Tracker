@@ -32,10 +32,12 @@ module.exports = (app) => {
 
     app.put("/api/workouts/:id", (req, res) => {
 
+        //had --> .updateOne({ _id: req.params.id},
+
         db.Workout.findByIdAndUpdate(req.params.id,
 
             {$push: {exercises: req.body}},
-            {new: true})
+            {new: true, runValidators: true})
             
         .then(data => res.json(data))
 
@@ -55,6 +57,8 @@ module.exports = (app) => {
 
     app.get("/api/workouts/range", (req, res) => {
 
+        //had  -->         .limit(7)
+        //had -->          .sort({ _id: -1 }).limit(7)
 
         db.Workout.find({}).then(data => res.json(data))
 
