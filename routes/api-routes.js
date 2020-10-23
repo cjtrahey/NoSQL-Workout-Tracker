@@ -35,7 +35,7 @@ module.exports = (app) => {
         db.Workout.findByIdAndUpdate(req.params.id,
 
             {$push: {exercises: req.body}},
-            {new: true, runValidators: true})
+            {new: true})
             
         .then(data => res.json(data))
 
@@ -56,7 +56,7 @@ module.exports = (app) => {
     app.get("/api/workouts/range", (req, res) => {
 
 
-        db.Workout.find({}).limit(7).then(data => res.json(data))
+        db.Workout.find({}).then(data => res.json(data))
 
 
         .catch(err => {
