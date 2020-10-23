@@ -60,7 +60,7 @@ module.exports = (app) => {
         //had  -->         .limit(7)
         //had -->          .sort({ _id: -1 }).limit(7)
 
-        db.Workout.find({}).then(data => res.json(data))
+        db.Workout.find({}).limit(7).then(data => res.json(data))
 
 
         .catch(err => {
