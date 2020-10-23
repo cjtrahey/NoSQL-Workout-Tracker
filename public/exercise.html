@@ -13,20 +13,32 @@
 
   <link rel="stylesheet" href="style.css" />
   <title>Fitness Tracker</title>
+
+  <style>
+
+    body {
+
+      background-color: rgb(255, 255, 255);
+
+    };
+
+  </style>
+
 </head>
 
 <body>
   <nav>
-    <a href="/">Fitness Tracker</a>
-    <a href="/stats">Dashboard</a>
+    <a href="/">Workout</a><a>‏‏‎‏‏‎ ‎ ‎‏‏‎‏‏‎ ‎|‏‏‎ ‎‏‏‎ ‎</a>
+    <a href="/stats">‏‏‎‏‏‎Dashboard</a>
   </nav>
   <div class="wrapper">
     <header>
-      <h1>Fitness Tracker</h1>
+      <h1>NoSQL Workout Tracker</h1>
     </header>
     <div class="ui container exercise">
       <div class="ui raised card m-auto">
-        <h2 class ="ui center aligned header segment">Add Your Exercise</h2>
+        <h2 class ="ui center aligned" style="padding-top: 20px;">Add Your Exercise</h2>
+        <hr>
         <form action="POST">
           <div class="workout-type">
             <label for="type">Exercise Type:</label>
@@ -73,10 +85,10 @@
             </div>
           </div>
           <div class="buttons">
-            <button disabled class="huge ui blue button complete">
+            <button disabled class="ui large teal button complete">
               Complete
             </button>
-            <button disabled class="huge ui positive button add-another">
+            <button disabled class="ui large black button add-another">
               Add Exercise
             </button>
           </div>
