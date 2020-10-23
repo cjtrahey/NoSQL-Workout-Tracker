@@ -21,9 +21,9 @@ nav {
   color: #ffffff;
   height: 60px;
   padding: 10px;
-  padding-top:5px;
+  padding-top:10px;
   line-height: 2.5;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 a,
@@ -140,14 +140,15 @@ form::after {
 }
 
 .exercise .ui.card {
+
   width: 400px;
-  max-width: 600px;
+
 }
 
 .exercise .buttons {
   margin-top: 20px;
   display: flex;
-  height: 70px;
+  height: 60px;
 }
 
 .exercise .buttons button {
@@ -230,7 +231,7 @@ button {
 
 
 .indexBtn {
-  padding-top: 25px !important;
+  padding-top: 28px !important;
 }
 
 
@@ -372,8 +373,9 @@ form > button {
 }
 
 .prev-workout h3 {
-  font-size: 2rem;
+  font-size: 24px;
   width: 100%;
+  padding-bottom:5px;
 }
 
 .prev-workout p {
@@ -381,9 +383,6 @@ form > button {
   margin-bottom: 5px;
 }
 
-/* .workout .card {
-  width: 350px;
-} */
 
 .prev-workout button {
   margin: 10px;
@@ -407,7 +406,7 @@ form > button {
 
 .prev-workout .buttons {
   display: flex;
-  height: 75px;
+  height: 65px;
   margin-top: 30px;
 }
 
