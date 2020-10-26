@@ -83,6 +83,19 @@ View a video overview on usage here:
 
 [![IMAGE](public/img/trip-wishlist_video-player_scrngrb.jpg)](https://drive.google.com/file/d/13k1SuX7pMayu0ahN_L9TZ95Uns9oZQ9D/view) 
 
+<p>&nbsp;<p> -->
+
+
+---
+
+
+<p>&nbsp;<p>
+
+
+
+[![IMAGE](public/images/NoSQL_Workout_INDEX.jpg)](https://nosql-work-out.herokuapp.com/) 
+
+
 <p>&nbsp;<p>
 
 
@@ -93,7 +106,7 @@ View a video overview on usage here:
 
 
 
-[![IMAGE](public/img/trip-wishlist_log-in_scrngrb.jpg)](https://trip-wishlist.herokuapp.com/) 
+[![IMAGE](public/images/NoSQL_Workout_STATS.jpg)](https://nosql-work-out.herokuapp.com/) 
 
 
 <p>&nbsp;<p>
@@ -102,20 +115,7 @@ View a video overview on usage here:
 ---
 
 
-<p>&nbsp;<p>
-
-
-
-[![IMAGE](public/img/trip-wishlist_hotelsearch_scrngrb.jpg)](https://trip-wishlist.herokuapp.com/) 
-
-
-<p>&nbsp;<p>
-
-
----
-
-
-<p>&nbsp;<p>
+<!-- <p>&nbsp;<p>
 
 
 
@@ -123,9 +123,9 @@ View a video overview on usage here:
 
 
 <p>&nbsp;<p>
+ -->
 
-
----
+<!-- ---
 
 
 <p>&nbsp;<p>
@@ -168,10 +168,10 @@ View a video overview on usage here:
 
 <p align= "center"><img src="public/img/TripWishlist_GIF.gif" alt="animated" href="https://trip-wishlist.herokuapp.com/" /></p>
 
-<p>&nbsp;</p> -->
+<p>&nbsp;</p>  -->
+<!-- 
 
-
----
+--- -->
 
 
 
@@ -232,6 +232,13 @@ This project is covered under the MIT license.
 <p>&nbsp;‏‏‎‏‏‎ ‎<strong>+</strong></p>
 
 
+`Chart.js` =>‏‏‎ ‎ ‏‏‎ ‎[Simple yet flexible JavaScript charting for designers & developers.](https://www.npmjs.com/package/chart.js/v/2.8.0)
+
+
+
+<p>&nbsp;‏‏‎‏‏‎ ‎<strong>+</strong></p>
+
+
 `Semantic Ui` =>‏‏‎ ‎ ‏‏‎ ‎[Semantic empowers designers and developers by creating a shared vocabulary for UI.](https://semantic-ui.com/)
 
 
@@ -246,7 +253,7 @@ This project is covered under the MIT license.
 
 <p>&nbsp;‏‏‎‏‏‎ ‎<strong>+</strong></p>
 
-`Morgan npm` =>‏‏‎ ‎ ‏‏‎ ‎[HTTP request logger middleware for node.js that is named after Dexter, a show you should not watch until completion.](https://www.npmjs.com/package/morgan)
+`Morgan npm` =>‏‏‎ ‎ ‏‏‎ ‎[HTTP request logger middleware for node.js that is named after Dexter.](https://www.npmjs.com/package/morgan)
 
 <p>&nbsp;<p>
 
