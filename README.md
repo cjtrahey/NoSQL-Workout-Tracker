@@ -24,7 +24,7 @@
 
 <p>&nbsp;<p>
 
-NoSQL Workout Tracker is a full stack application that allows users to input specifics about their recent workouts and the exercises that they performed during them. Exercises are categorized by resistance training and cardio, and the exact name of the exercise is defined by the user themselves. There are input fields for time duration of each exercise, distance, weight lifted, sets, and reps. Workout information is stored in a `MongoDB` database, and totals are calculated from each workout. The most recent workout totals are presented on the main page, and the last seven days are visually represented within the dashboard section thanks to `Chart.js`. This is useful for those who want to keep track of details surrounding their most recent workouts and view their progress over the course of the last seven sessions.
+NoSQL Workout Tracker is a full stack application that allows users to input specifics about their recent workouts and the exercises that they performed during them. Exercises are categorized by resistance training and cardio, and the exact name of the exercise is defined by the user themselves. There are input fields for time duration of each exercise, distance, weight lifted, sets, and reps. Workout information is stored in a [`MongoDB`](https://www.mongodb.com/) database, and totals are calculated from each workout. The most recent workout totals are presented on the main page, and the last seven workouts are visually represented within the dashboard section thanks to [`Chart.js`](https://www.chartjs.org/). This is useful for those who want to keep track of the exact dates/details surrounding their most recent workouts and view their progress over the course of the last seven sessions.
 
 <p>&nbsp;<p>
 
@@ -233,7 +233,7 @@ This project is covered under the MIT license.
 <p>&nbsp;‏‏‎‏‏‎ ‎<strong>+</strong></p>
 
 
-`Chart.js` =>‏‏‎ ‎ ‏‏‎ ‎[Simple yet flexible JavaScript charting for designers & developers.](https://www.npmjs.com/package/chart.js/v/2.8.0)
+`Chart.js` =>‏‏‎ ‎ ‏‏‎ ‎[Simple yet flexible JavaScript charting for designers & developers.](https://www.chartjs.org/)
 
 
 
