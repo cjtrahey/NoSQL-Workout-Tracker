@@ -72,7 +72,7 @@ function populateChart(data) {
 
   let dayLabels = labelForDayOfTheWeek(data);
 
-  lineChart = new Chart(line, {
+  let lineChart = new Chart(line, {
     type: "line",
     data: {
 
