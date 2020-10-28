@@ -45,7 +45,7 @@ function populateChart(data) {
   let pie2 = document.querySelector("#canvas4").getContext("2d");
 
   function labelForDayOfTheWeek(data) {
-    
+
     const days = [
       "Sunday",
       "Monday",
@@ -58,13 +58,16 @@ function populateChart(data) {
 
     const labels = [];
 
-    for (let i = 0; i < data.length; i++) {
-      const dayOfTheWeek = new Date(data[i].day).getDay();
-      const month = new Date(data[i].day).getMonth() + 1;
-      const date = new Date(data[i].day).getDate();
-      labels.push(`${days[dayOfTheWeek]} ${[month]}/${[date]}`);
+    data.forEach(workout => {
+      if (workout.exercises.length > 0) {
 
-    }
+        const dayOfTheWeek = new Date(workout.day).getDay();
+        const month = new Date(workout.day).getMonth() + 1;
+        const date = new Date(workout.day).getDate();
+        labels.push(`${days[dayOfTheWeek]} ${[month]}/${[date]}`);
+
+      }
+    });
 
     return labels;
 
@@ -115,7 +118,7 @@ function populateChart(data) {
     }
   });
 
- let barChart = new Chart(bar, {
+  let barChart = new Chart(bar, {
 
     type: "bar",
     data: {
@@ -210,21 +213,37 @@ function duration(data) {
   let durations = [];
 
   data.forEach(workout => {
-    workout.exercises.forEach(exercise => {
-      durations.push(exercise.duration);
-    });
+
+    if (workout.exercises.length > 0) {
+      durations.push(workout.totalDuration)
+    }
+    // workout.exercises.forEach(exercise => {
+    //   durations.push(exercise.duration);
+    // });
   });
 
   return durations;
 }
 
 function calculateTotalWeight(data) {
+
   let total = [];
 
+
   data.forEach(workout => {
-    workout.exercises.forEach(exercise => {
-      total.push(exercise.weight);
-    });
+
+    if (workout.exercises.length > 0) {
+
+      const totalWeight = workout.exercises.reduce((total, exercise) => {
+        return total + exercise.weight
+      }, 0);
+
+      total.push(totalWeight);
+    };
+
+    // workout.exercises.forEach(exercise => {
+    //   total.push(exercise.weight);
+    // });
   });
 
   return total;
